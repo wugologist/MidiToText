@@ -13,7 +13,10 @@ class Note {
    * @param key The key of the pitch. Key 60 = C4.
    */
   Note(int instrument, int key){
-    this.instrument = instrument;
+    // Some midi instruments start at 0, some at 1. The example ones from the homework start at 1.
+    // Better to be off by an instrument than to pass negative values.
+    // Should probably think this through more...
+    this.instrument = instrument + 1;
     this.key = key;
   }
 
