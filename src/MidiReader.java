@@ -79,7 +79,7 @@ class MidiReader {
     // Sometimes messages seem to be in the wrong order, maybe from bad input?
     // We ignore whenever we try to remove notes before they begin, i.e. aren't in the map.
     if (info != null) {
-      output.append("note ").append(String.valueOf(info.getStartTone())).append(" ")
+      output.append("note ").append(String.valueOf(info.getStartTick())).append(" ")
               .append(String.valueOf(tickOff)).append(" ")
               .append(String.valueOf(n.getInstrument())).append(" ")
               .append(String.valueOf(n.getKey())).append(" ")
@@ -113,7 +113,7 @@ class MidiReader {
       return velocity;
     }
 
-    long getStartTone() {
+    long getStartTick() {
       return startTick;
     }
   }
