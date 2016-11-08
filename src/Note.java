@@ -13,7 +13,7 @@ class Note {
    * @param key The key of the pitch. Key 60 = C4.
    */
   Note(int instrument, int key){
-    this.instrument = instrument % 16 + 1; // we only support 16 instruments (for now...)
+    this.instrument = instrument;
     this.key = key;
   }
 

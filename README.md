@@ -17,5 +17,5 @@ This number isn't always correct (for now), you may need to adjust it depending 
 
 Rest of lines:  
 `note <start> <stop> <instrument> <key> <velocity>`  
-where `<start>` and `<stop>` are the beginning and end beats, respectively, `<instrument>` is the instrument (mod 16),
+where `<start>` and `<stop>` are the beginning and end beats, respectively, `<instrument>` is the instrument,
 `<key>` is the key of the note (60 = C4), and `<velocity>` is the volume, in [0, 127].
