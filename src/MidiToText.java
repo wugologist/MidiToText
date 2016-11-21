@@ -15,6 +15,7 @@ public class MidiToText {
   public static void main(String[] args) {
     if (args.length != 2 && args.length != 0) {
       System.err.print("Usage: args[0] = path/to/midi, args[1] = path/to/output");
+      System.err.print("Usage: no arguments for GUI prompts");
       return;
     }
 
