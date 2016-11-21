@@ -9,7 +9,7 @@ Compile to jar:
 Running otherwise:  
 `args[0] = /path/to/input.midi, args[1] = /path/to/output.txt`  
 
-This can also be run without arguments to open & save dialogs. This lets the program be run without
+This can also be run without arguments for open & save dialogs. This lets the program be run without
 a terminal.
 
 ## Output Format
